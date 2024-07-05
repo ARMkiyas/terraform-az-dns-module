@@ -24,3 +24,4 @@ resource "azurerm_private_dns_aaaa_record" "AAAA_record_private" {
 
 
 }
+

@@ -54,10 +54,18 @@ variable "aaaa_records" {
 }
 
 variable "cname_records" {
-  type        = list(any)
-  description = "(Optional) Specifies a list of CNAME records to create in the specified DNS zone."
+  type = list(
+    object({
+      name    = string
+      ttl     = number
+      record = string
+    })
+  )
+  description = "Specifies a list of A records to create in the specified DNS zone."
   default     = []
+
 }
+
 
 variable "mx_records" {
   type        = any
