@@ -19,7 +19,7 @@ This Terraform module manages DNS zones and records in Azure. It allows you to c
 
 ```hcl
 module "dns_zone" {
-  source = "path/to/your/module"
+  source = "https://github.com/ARMkiyas/terraform-az-dns-module.git"
 
   resource_group_name = "example-resources"
   zone_name           = "example.com"
@@ -69,7 +69,7 @@ module "dns_zone" {
 
 ```hcl
 module "dns_zone" {
-  source = "path/to/your/module"
+  source = "https://github.com/ARMkiyas/terraform-az-dns-module.git"
 
   resource_group_name = "example-resources"
   zone_name           = "existing-zone.com"
@@ -135,7 +135,7 @@ module "dns_zone" {
 
 ```hcl
 module "dns_example" {
-  source = "path/to/your/module"
+  source = "https://github.com/ARMkiyas/terraform-az-dns-module.git"
 
   resource_group_name = "example-resources"
   zone_name           = "example.com"
