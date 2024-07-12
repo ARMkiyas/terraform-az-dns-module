@@ -1,6 +1,3 @@
-Here's the updated README including the AAAA records:
-
----
 
 # Azure DNS Terraform Module
 
